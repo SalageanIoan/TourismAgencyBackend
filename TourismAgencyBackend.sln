@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TourismAgencyAPI", "TourismAgencyAPI\TourismAgencyAPI.csproj", "{B5EE0951-FF17-4232-A390-78EE44C3302C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{CAD33188-55D1-489F-9833-A32E8BC299F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{B5BE9923-FA7E-44A3-A782-E6C374FC962C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TourismAgencyAPITest", "TourismAgencyAPITest\TourismAgencyAPITest.csproj", "{519E6123-0B41-40C4-865F-A2D3CB9B5B2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5EE0951-FF17-4232-A390-78EE44C3302C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5EE0951-FF17-4232-A390-78EE44C3302C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5EE0951-FF17-4232-A390-78EE44C3302C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5EE0951-FF17-4232-A390-78EE44C3302C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{519E6123-0B41-40C4-865F-A2D3CB9B5B2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{519E6123-0B41-40C4-865F-A2D3CB9B5B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{519E6123-0B41-40C4-865F-A2D3CB9B5B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{519E6123-0B41-40C4-865F-A2D3CB9B5B2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B5EE0951-FF17-4232-A390-78EE44C3302C} = {CAD33188-55D1-489F-9833-A32E8BC299F3}
+		{519E6123-0B41-40C4-865F-A2D3CB9B5B2A} = {B5BE9923-FA7E-44A3-A782-E6C374FC962C}
+	EndGlobalSection
+EndGlobal
