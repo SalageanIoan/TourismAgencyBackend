@@ -4,23 +4,21 @@ using TourismAgencyAPI.Models;
 
 namespace TourismAgencyAPI.Repositories;
 
-public class UserRepository : IUserRepository
+public class UserRepository(AppDbContext context) : IUserRepository
 {
-    private readonly AppDbContext _context;
-
-    public UserRepository(AppDbContext context)
+    public async Task<User?> GetByEmailAsync(string email)
     {
-        _context = context;
+        return (await context.Users.FirstOrDefaultAsync(u => u.Email == email))!;
     }
 
-    public async Task<User> GetByEmailAsync(string email)
+    public async Task<User?> GetByIdAsync(Guid id)  
     {
-        return (await _context.Users.FirstOrDefaultAsync(u => u.Email == email))!;
+        return await context.Users.FindAsync(id);
     }
 
-    public async Task AddAsync(User user)
+    public async Task AddAsync(User? user)
     {
-        _context.Users.Add(user);
-        await _context.SaveChangesAsync();
+        if (user != null) context.Users.Add(user);
+        await context.SaveChangesAsync();
     }
 }

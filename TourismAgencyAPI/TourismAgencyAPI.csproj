@@ -9,6 +9,7 @@
     <ItemGroup>
         <PackageReference Include="FluentValidation" Version="11.11.0" />
         <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.AzureAD.UI" Version="7.0.0-preview.6.22330.3" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.11" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.13" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.13">
@@ -18,7 +19,7 @@
         <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.13" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.13" />
         <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.3" />
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
     </ItemGroup>
 
     <ItemGroup>

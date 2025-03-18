@@ -6,12 +6,7 @@ namespace TourismAgencyAPITest.Crypto;
 
 public class HashServiceTests
 {
-    private readonly HashService _hashService;
-
-    public HashServiceTests()
-    {
-        _hashService = new HashService();
-    }
+    private readonly HashService _hashService = new();
 
     [Fact]
     public void Hash_ShouldGenerateDifferentHashesForSameInput()
@@ -21,7 +16,8 @@ public class HashServiceTests
         string hash1 = _hashService.Hash(password);
         string hash2 = _hashService.Hash(password);
 
-        Assert.False(hash1 == hash2, "Hashes should not be equal due to salt.");    }
+        Assert.False(hash1 == hash2, "Hashes should not be equal due to salt.");    
+    }
 
     [Fact]
     public void Matches_ShouldReturnTrueForValidPassword()

@@ -10,12 +10,17 @@ namespace TourismAgencyAPI.Services;
 public class AuthService(IUserRepository userRepository, IConfiguration configuration)
     : IAuthService
 {
-    public async Task<string> RegisterAsync(User user, string password)
+    public async Task<string> RegisterAsync(User? user, string password)
     {
         var hashService = new HashService();
-        user.Password = hashService.Hash(password);
-        await userRepository.AddAsync(user);
-        return GenerateJwtToken(user);
+        if (user != null)
+        {
+            user.Password = hashService.Hash(password);
+            await userRepository.AddAsync(user);
+            return GenerateJwtToken(user);
+        }
+        
+        return null!;
     }
 
     public async Task<string> LoginAsync(string email, string password)
@@ -23,31 +28,36 @@ public class AuthService(IUserRepository userRepository, IConfiguration configur
         var user = await userRepository.GetByEmailAsync(email);
 
         var hashService = new HashService();
-        if (!hashService.Matches(password, user.Password))
+        if (user != null && !hashService.Matches(password, user.Password))
             return null!;
 
         return GenerateJwtToken(user);
     }
 
-    private string GenerateJwtToken(User user)
+    private string GenerateJwtToken(User? user)
     {
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Key"] ?? string.Empty));
         var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-        var claims = new[]
+        if (user != null)
         {
-            new Claim(JwtRegisteredClaimNames.Sub, user.Email),
-            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            new Claim(ClaimTypes.Role, user.Role.ToString())
-        };
+            var claims = new[]
+            {
+                new Claim(JwtRegisteredClaimNames.Sub, user.Email),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim(ClaimTypes.Role, user.Role.ToString())
+            };
 
-        var token = new JwtSecurityToken(
-            configuration["Jwt:Issuer"],
-            configuration["Jwt:Audience"],
-            claims,
-            expires: DateTime.UtcNow.AddHours(2),
-            signingCredentials: credentials
-        );
+            var token = new JwtSecurityToken(
+                configuration["Jwt:Issuer"],
+                configuration["Jwt:Audience"],
+                claims,
+                expires: DateTime.UtcNow.AddHours(2),
+                signingCredentials: credentials
+            );
 
-        return new JwtSecurityTokenHandler().WriteToken(token);
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+        
+        return null!;
     }
 }

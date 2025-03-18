@@ -8,19 +8,25 @@ namespace TourismAgencyAPI.Controllers;
 
 [Route("api/auth")]
 [ApiController]
-public class AuthController(IAuthService authService, IValidator<User> validator) : ControllerBase
+public class AuthController(IAuthService authService, IValidator<User?> validator) : ControllerBase
 {
     [HttpPost("register")]
-    public async Task<IActionResult> Register([FromBody] User user)
+    public async Task<IActionResult> Register([FromBody] User? user)
     {
-        ValidationResult validationResult = await validator.ValidateAsync(user);
-
-        if (!validationResult.IsValid)
+        if (user != null)
         {
-            return BadRequest(validationResult.Errors.Select(e => e.ErrorMessage));
+            user.Id = Guid.NewGuid();
+
+            ValidationResult validationResult = await validator.ValidateAsync(user);
+
+            if (!validationResult.IsValid)
+            {
+                return BadRequest(validationResult.Errors.Select(e => e.ErrorMessage));
+            }
+
+            await authService.RegisterAsync(user, user.Password);
         }
 
-        await authService.RegisterAsync(user, user.Password);
         return Ok(new { Message = "User registered successfully" });
     }
 

@@ -8,6 +8,8 @@
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/bin/Debug/net8.0/Azure.Core.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/bin/Debug/net8.0/Azure.Identity.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/bin/Debug/net8.0/FluentValidation.dll
+/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
+/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/bin/Debug/net8.0/Humanizer.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
@@ -147,8 +149,9 @@
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/obj/Debug/net8.0/TourismAgencyAPI.pdb
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/obj/Debug/net8.0/TourismAgencyAPI.genruntimeconfig.cache
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/obj/Debug/net8.0/ref/TourismAgencyAPI.dll
-/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
-/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.AzureAD.UI.dll
+/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/bin/Debug/net8.0/TourismAgencyAPI.staticwebassets.endpoints.json
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/obj/Debug/net8.0/staticwebassets.build.endpoints.json
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPI/obj/Debug/net8.0/staticwebassets/msbuild.TourismAgencyAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props

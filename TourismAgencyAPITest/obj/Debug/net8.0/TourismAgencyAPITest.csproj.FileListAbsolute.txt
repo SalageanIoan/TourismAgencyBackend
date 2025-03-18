@@ -3,6 +3,7 @@
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/TourismAgencyAPI.runtimeconfig.json
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/appsettings.Development.json
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/appsettings.json
+/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/TourismAgencyAPI.staticwebassets.endpoints.json
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/TourismAgencyAPI
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/NUnit3.TestAdapter.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/NUnit3.TestAdapter.pdb
@@ -16,7 +17,11 @@
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/TourismAgencyAPITest.pdb
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Azure.Core.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Azure.Identity.dll
+/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Castle.Core.dll
+/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/FluentAssertions.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/FluentValidation.dll
+/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
+/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
@@ -50,9 +55,12 @@
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Microsoft.VisualStudio.TestPlatform.Common.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/testhost.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll
+/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Moq.dll
+/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/MySqlConnector.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Newtonsoft.Json.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/NuGet.Frameworks.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/nunit.framework.dll
+/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Pomelo.EntityFrameworkCore.MySql.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -161,11 +169,6 @@
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/obj/Debug/net8.0/TourismAgencyAPITest.pdb
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/obj/Debug/net8.0/TourismAgencyAPITest.genruntimeconfig.cache
 /Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/obj/Debug/net8.0/ref/TourismAgencyAPITest.dll
-/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/TourismAgencyAPI.staticwebassets.endpoints.json
-/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
-/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
-/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/MySqlConnector.dll
-/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Pomelo.EntityFrameworkCore.MySql.dll
-/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Castle.Core.dll
-/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/FluentAssertions.dll
-/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Moq.dll
+/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.AzureAD.UI.dll
+/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/salageanioan/RiderProjects/TourismAgencyBackend/TourismAgencyAPITest/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
